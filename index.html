@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="googlebot" content="noindex, nofollow">
+  <meta http-equiv="Cache-control" content="public">
+  <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?libraries=geometry,places&ext=.js&key=AIzaSyD2VuAJnD6Fo7GWg_tn2xK5yI0Grhw0_0w"></script>
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/datejs/1.0/date.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ratchet/2.0.2/css/ratchet.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ratchet/2.0.2/css/ratchet-theme-ios.min.css" />
+  <style type="text/css">
+  html, body{
+    height: 100%;
+    width: 100%;
+  }
+    #map {
+    height: 100%;
+    width: 100%;
+}/*
+#sidebar {
+  margin-top: 2%;
+  font-family: Verdana;
+  float: left;
+  width: 20%;
+  display: hidden;
+}
+#heading{
+  text-align: center;
+  background-color: yellow;
+  margin-left: -2.5%;
+}
+#halte-info{
+  text-align: left;
+  font-family: verdana;
+  margin-left: -2.5%;
+  margin-top: 5%;
+}
+#halte-info b{
+    font-size: 10pt;
+}
+#dichtste{
+    margin-left: -2.5%;
+    text-align: center;
+}
+#halte-info p{
+    font-size: 12pt;
+}*/
+#sidebar {
+  display: none;
+}
+#map h5{
+  color: black !important;
+  font-style: bold;
+}
+#map .number{
+  padding: 5px;
+  margin-right: 10px;
+  border-radius: 4px;
+}
+.time{
+  width: 100%;
+  text-align: right;
+  text-transform: uppercase;
+}
+.feedback{
+  font-style: italic;
+  background-color: #D3D3D3;
+  color: white;
+  border-radius: 3px;
+margin: 5px;
+text-align: center;
+}
+.feedback p{
+padding: 5px !important;
+margin: 5px;
+}
+.feedback p{
+  color: black !important;
+}
+hr {
+    border: 0;
+    height: 0;
+    border-top: 2px solid rgba(0, 0, 0, 0.1);
+    border-bottom: 2px solid rgba(255, 255, 255, 0.3);
+}
+  </style>
+  <title>De Ophopingslijn</title>
+<script src="main.js" type='text/javascript'></script>
+</head>
+<body onload="getId(); shareLocation();">
+<header class="bar bar-nav">
+  <h1 class="title">De Ophopingslijn</h1>
+</header>
+  <div id="sidebar"><div id="heading"><b>De Ophopingslijn</b></div>
+  <div id="halte-info">
+    <div id="dichtste"><b>Dichtstbijzijnde Haltes:</b></div><br><br>
+
+  </div></div>
+  <div id="map"></div>
+
+  <nav class="bar bar-tab">
+  <a class="tab-item active" href="#">
+    <span class="icon icon-home"></span>
+    <span class="tab-label">Home</span>
+  </a>
+  <a class="tab-item" href="#">
+    <span class="icon icon-search"></span>
+    <span class="tab-label">Search</span>
+  </a>
+  <a class="tab-item" href="#">
+    <span class="icon icon-gear"></span>
+    <span class="tab-label">Settings</span>
+  </a>
+</nav>
+</body>
+</html>
+
+

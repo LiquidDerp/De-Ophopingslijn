@@ -1,5 +1,6 @@
 # De-Ophopingslijn
 
+IMPORTANT NOTICE: Didn't write most of this, this repo is for archive/reference purpose only.
 
 Dutch:
 
